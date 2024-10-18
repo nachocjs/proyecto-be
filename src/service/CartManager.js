@@ -11,8 +11,8 @@ export default class CartManager {
 
     async init() {
         try {
-            const data = await fs.readFile(CartsFilePath, 'utf-8')
-            this.carts = JSON.parse(data)
+            const dataCarrito = await fs.readFile(CartsFilePath, 'utf-8')
+            this.carts = JSON.parse(dataCarrito)
         } catch (error) {
             this.carts = []
         }
