@@ -14,7 +14,7 @@ export default class CartManager {
             const dataCarrito = await fs.readFile(CartsFilePath, 'utf-8')
             this.carts = JSON.parse(dataCarrito)
         } catch (error) {
-            this.carts = []
+            this.carts = [];
         }
     } 
 

@@ -14,7 +14,7 @@ export default class ProductManager {
             const data = await fs.readFile(productosFilePath, 'utf-8')
             this.products = JSON.parse(data)
         } catch (error) {
-            this.products = []
+            this.products = [];
         }
     } 
 
